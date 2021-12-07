@@ -75,9 +75,9 @@ collections:
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Author", name: "author", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Covid Status", name: "covidStatus", widget: "select", options: ["GRAY", "RED", "YELLOW", "GREEN"] }          
-          - { label: "Intro Heading", name: "introHeading", widget: "string" }
-          - { label: "Intro Text", name: "introText", widget: "markdown" }
-          - { label: "Mass Time Tables", name: "masstimetables", widget: "list", fields: [{label: "Heading", name: "heading", widget: string}, {label: "Message", name: "message", widget: text}, {label: "Mass Times", name: "masstimes", widget: list, fields: [{label: "Day", name: "day", widget: string}, {label: "time", name: "time", widget: text},  {label: "Live Streamed?", name: "streamed", widget: boolean, default: "false"}]}] }
+          - { label: "Covid Status", name: "covidstatus", widget: "select", options: ["GRAY", "RED", "YELLOW", "GREEN"] }          
+          - { label: "Welcome Heading", name: "welcomeheading", widget: "string" }
+          - { label: "Welcome Message", name: "welcomemessage", widget: "markdown" }
+          - { label: "Mass Time Tables", name: "masstimetables", widget: "list", fields: [{label: "Heading", name: "heading", widget: string}, {label: "Message", name: "message", widget: text, required: false}, {label: "Mass Times", name: "masstimes", widget: list, fields: [{label: "Day", name: "day", widget: string}, {label: "time", name: "time", widget: text},  {label: "Live Streamed?", name: "streamed", widget: boolean, default: "false"}]}] }
 
                                           
