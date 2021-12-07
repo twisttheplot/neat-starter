@@ -12,19 +12,22 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "index"
-    name: "Index Page"
-    file: "src/index.html"
-    create: false
-    editor:
-      preview: true
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Intro Heading", name: "introHeading", widget: "string" }
-      - { label: "Intro Text", name: "introText", widget: "markdown" } 
+  - label: "pages"
+    name: "Pages"
+    files:
+      - label: "Index"
+        name: "Index Page"
+        file: "src/index.html"
+        create: false
+        editor:
+        preview: true
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Intro Heading", name: "introHeading", widget: "string" }
+          - { label: "Intro Text", name: "introText", widget: "markdown" } 
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
