@@ -78,6 +78,6 @@ collections:
           - { label: "Covid Status", name: "covidstatus", widget: "select", options: ["GRAY", "RED", "YELLOW", "GREEN"] }          
           - { label: "Welcome Heading", name: "welcomeheading", widget: "string" }
           - { label: "Welcome Message", name: "welcomemessage", widget: "markdown" }
-          - { label: "Mass Time Tables", name: "masstimetables", widget: "list", fields: [{label: "Heading", name: "heading", widget: string}, {label: "Message", name: "message", widget: text, required: false}, {label: "Mass Times", name: "masstimes", widget: list, fields: [{label: "Day", name: "day", widget: string}, {label: "time", name: "time", widget: text},  {label: "Live Streamed?", name: "streamed", widget: boolean, default: "false"}]}] }
+          - { label: "Mass Time Tables", name: "masstimetables", widget: "list", fields: [{label: "Heading", name: "heading", widget: string}, {label: "Message", name: "message", widget: text, required: "false"}, {label: "Mass Times", name: "masstimes", widget: list, fields: [{label: "Day", name: "day", widget: string}, {label: "time", name: "time", widget: text},  {label: "Live Streamed?", name: "streamed", widget: boolean, default: "false"}]}] }
 
                                           
