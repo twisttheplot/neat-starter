@@ -78,3 +78,11 @@ collections:
           - { label: "Covid Status", name: "covidStatus", widget: "select", options: ["GRAY", "RED", "YELLOW", "GREEN"] }          
           - { label: "Intro Heading", name: "introHeading", widget: "string" }
           - { label: "Intro Text", name: "introText", widget: "markdown" }
+          - label: Mass Time Table
+            name: masstimetables
+            widget: list, 
+            summary: {{ fields.heading }}
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Message, name: message, widget: string}
+                                          
