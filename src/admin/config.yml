@@ -13,11 +13,11 @@ local_backend: true
 # publish_mode: editorial_workflow
 collections:
   - label: "index"
-    name: "Index"
-    folder: "src/"
+    name: "Index Page"
+    file: "src/index.html"
     create: false
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
