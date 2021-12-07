@@ -79,5 +79,5 @@ collections:
           - { label: "Welcome Heading", name: "welcomeheading", widget: "string" }
           - { label: "Welcome Message", name: "welcomemessage", widget: "markdown" }
           - { label: "Mass Time Tables", name: "masstimetables", widget: "list", fields: [{label: "Heading", name: "heading", widget: string}, {label: "Message", name: "message", widget: "markdown", required: false}, {label: "Mass Times", name: "masstimes", widget: list, fields: [{label: "Day", name: "day", widget: string}, {label: "time", name: "time", widget: string},  {label: "Live Streamed?", name: "streamed", widget: boolean, default: "false"}]}] }
-
+          - { label: "Upcoming Events", name: "upcomingevents", widget: "list", fields: [{label: "Date", name: "date", widget: string}, { label: "Time", name: "time", widget: string}, {label: "Details", name: "details", widget: "markdown"}] }
                                           
